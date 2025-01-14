@@ -16,6 +16,7 @@
 
 Banco de dados pelo Brownser:  http://localhost/MAMP/phpmyadmin.php?lang=en <br>
 Pagina Main do MAMP: http://localhost/MAMP/ <br>  <br>
+Página do projeto no localhost: localhost/login.php <br> <br>
 Acesso ao banco de dados pelo HeidSQL:
    <br> -> Tipo de rede: MariaDB or MySQL
    <br> -> Biblioteca: libmariadb.dll
