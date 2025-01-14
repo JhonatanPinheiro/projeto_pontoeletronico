@@ -19,10 +19,10 @@ Banco de dados pelo Brownser:  http://localhost/MAMP/phpmyadmin.php?lang=en
 Pagina Main do MAMP: http://localhost/MAMP/
 
 Acesso ao banco de dados pelo HeidSQL:
-    Tipo de rede: MariaDB or MySQL
-    Biblioteca: libmariadb.dll
-    Servidor/IP: localhost OU 
-    Usuário: root
-    Senha: root
-    Porta: 3306
+    -> Tipo de rede: MariaDB or MySQL
+    -> Biblioteca: libmariadb.dll
+    -> Servidor/IP: localhost OU 
+    -> Usuário: root
+    -> Senha: root
+    -> Porta: 3306
     
