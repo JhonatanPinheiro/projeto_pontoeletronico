@@ -12,17 +12,15 @@
     - Dentro da opção Document Root iremos colocar o caminho que será setado do arquivo public que estará dentro da pasta (projeto_pontoeletronico)
 - Para finalizar clicar na opção OK
 
-#Acessos
+#Acessos <br>
 
-Banco de dados pelo Brownser:  http://localhost/MAMP/phpmyadmin.php?lang=en
-
-Pagina Main do MAMP: http://localhost/MAMP/
-
+Banco de dados pelo Brownser:  http://localhost/MAMP/phpmyadmin.php?lang=en <br>
+Pagina Main do MAMP: http://localhost/MAMP/ <br>
 Acesso ao banco de dados pelo HeidSQL:
    <br> -> Tipo de rede: MariaDB or MySQL
    <br> -> Biblioteca: libmariadb.dll
-    -> Servidor/IP: localhost OU 
-    -> Usuário: root
-    -> Senha: root
-    -> Porta: 3306
+   <br> -> Servidor/IP: localhost OU 
+   <br> -> Usuário: root
+   <br> -> Senha: root
+   <br> -> Porta: 3306
     
