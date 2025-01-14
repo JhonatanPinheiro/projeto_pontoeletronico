@@ -13,7 +13,9 @@
 - Para finalizar clicar na opção OK
 
 #Acessos
+
 Banco de dados pelo Brownser:  http://localhost/MAMP/phpmyadmin.php?lang=en
+
 Pagina Main do MAMP: http://localhost/MAMP/
 
 Acesso ao banco de dados pelo HeidSQL:
