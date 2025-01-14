@@ -3,7 +3,7 @@
   - HeidSQL ou MySQL Workbench
 
 #Configurando o projeto
-- Clonar o projeto (projeto_pontoeletronico) no local desejado
+- Clonar o projeto (projeto_pontoeletronico) no local informado (C:\MAMP\htdocs)
 - Configurar a rota da pasta public na ferramente MAMP.
     - Abrir a ferramente MAMP
     - Selecionar aba MAMP
