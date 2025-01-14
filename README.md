@@ -19,7 +19,7 @@ Pagina Main do MAMP: http://localhost/MAMP/ <br>  <br>
 Acesso ao banco de dados pelo HeidSQL:
    <br> -> Tipo de rede: MariaDB or MySQL
    <br> -> Biblioteca: libmariadb.dll
-   <br> -> Servidor/IP: localhost OU 
+   <br> -> Servidor/IP: localhost OU 127.0.0.1
    <br> -> Usuário: root
    <br> -> Senha: root
    <br> -> Porta: 3306
