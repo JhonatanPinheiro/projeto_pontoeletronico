@@ -10,3 +10,13 @@ Model => Regras de Negócios, Entidades, Camada de Acesso de Dados
 View => Responsável por redenrizar a respostas seja ela: aplicação desktop ou Web
 Controller => Seria oque faz o intermédio de todos fluxo desde pedir para o model as informações da base de dados já que  ele detém essa lógica dos dados, ele detém a camada do acesso a dados. Ele irá pegar essas informações e trabalha isso em uma view para renderizada por exemplo;  
 
+Explicando por cima o MVC
+
+Sem precisar acessar ao banco de dados
+Browser -----requisição-----> Controller -----Encaminha---> View -----Resposta---> Browser
+
+
+Precisando acessar o banco de dados 
+Etapa1: Browser ----requisição--> Controller -----Instancia--> Model ---acessa--> Banco de Dados
+Etapa2: controller ----encaminha--> View ----redenriza a resposta--> Browser 
+
