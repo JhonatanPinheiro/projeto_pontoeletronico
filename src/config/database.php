@@ -18,6 +18,6 @@ class Database
             die("Erro:" . $conn->connect_error);
         }
 
-        return $coon;
+        return $conn;
     }
 }
