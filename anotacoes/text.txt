@@ -1,0 +1,12 @@
+Sobre MVC (Model , View, Controle)
+
+I. Visão Geral
+
+II. Fluxo sem Dados (Sem necessidade para pegar informação ao banco de dados)
+
+III. Fluxo com Dados
+
+Model => Regras de Negócios, Entidades, Camada de Acesso de Dados
+View => Responsável por redenrizar a respostas seja ela: aplicação desktop ou Web
+Controller => Seria oque faz o intermédio de todos fluxo desde pedir para o model as informações da base de dados já que  ele detém essa lógica dos dados, ele detém a camada do acesso a dados. Ele irá pegar essas informações e trabalha isso em uma view para renderizada por exemplo;  
+
