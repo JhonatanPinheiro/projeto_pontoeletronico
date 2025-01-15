@@ -11,6 +11,6 @@ class User extends Model
         'email',
         'start_date',
         'end_date',
-        'is_admin',
+        'is_admin'
     ];
 }

@@ -21,12 +21,19 @@ class Model
         }
     }
 
-    public function __get($key) {
+    public function __get($key)
+    {
         return $this->values[$key];
     }
 
     public function __set($key, $value)
     {
         $this->values[$key] = $value;
+    }
+
+    public static function getSelect($filters = [], $columns = '*')
+    {
+        $sql = "SELECT {$columns}  FROM " . static::$tableName;
+        return $sql;
     }
 }

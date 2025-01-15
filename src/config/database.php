@@ -21,11 +21,11 @@ class Database
         return $conn;
     }
     #Fazendo a consulta no banco de dados
-    public static function getResultFromQuery($sql) {
+    public static function getResultFromQuery($sql)
+    {
         $conn = self::getConnection();
         $result = $conn->query($sql);
         $conn->close();
         return $result;
-        
     }
 }
