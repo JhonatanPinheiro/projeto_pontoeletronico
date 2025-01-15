@@ -20,3 +20,5 @@ Precisando acessar o banco de dados
 Etapa1: Browser ----requisição--> Controller -----Instancia--> Model ---acessa--> Banco de Dados
 Etapa2: controller ----encaminha--> View ----redenriza a resposta--> Browser 
 
+<>
+
