@@ -42,12 +42,23 @@ class Model
         $sql = '';
 
         if (count($filters) > 0) {
-            $sql .= "WHERE 1 = 1";
-            foreach($filters as $column =>$value){
-                $sql .= " AND {$column} = {$value}";
+            $sql .= " WHERE 1 = 1";
+            foreach ($filters as $column => $value) {
+                $sql .= " AND {$column} = " . static::getFormatedValue($value);
             }
         }
 
         return $sql;
+    }
+
+    private static function getFormatedValue($value)
+    {
+        if (is_null($value)) {
+            return "NULL";
+        } elseif (gettype($value) === 'string') {
+            return "'{$value}'";
+        } else {
+            return $value;
+        }
     }
 }

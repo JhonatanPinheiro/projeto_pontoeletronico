@@ -14,3 +14,10 @@ echo '<br>';
 echo User::getSelect(['name' => 'Chaves', 'email' => 'chaves@testenet.com']);
 echo '<br>';
 echo User::getSelect(['name' => 'teste', 'email' => 'teste@testenet.com', 'is_admin' => '1', 'estado'=>'sp']);
+
+
+
+echo '<hr>';
+print_r(gettype($user));
+echo '<br>';
+var_dump(gettype($user));
