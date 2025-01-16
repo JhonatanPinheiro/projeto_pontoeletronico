@@ -33,7 +33,21 @@ class Model
 
     public static function getSelect($filters = [], $columns = '*')
     {
-        $sql = "SELECT {$columns}  FROM " . static::$tableName;
+        $sql = "SELECT {$columns}  FROM " . static::$tableName . static::getFilters($filters);
+        return $sql;
+    }
+
+    private static function getFilters($filters)
+    {
+        $sql = '';
+
+        if (count($filters) > 0) {
+            $sql .= "WHERE 1 = 1";
+            foreach($filters as $column =>$value){
+                $sql .= " AND {$column} = {$value}";
+            }
+        }
+
         return $sql;
     }
 }
