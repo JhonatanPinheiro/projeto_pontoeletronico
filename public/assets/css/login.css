@@ -4,12 +4,31 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #DDD;
+    background-image: linear-gradient(45deg, #f6f6f6 0%, #0275d8 80%);
 }
 
 .form-login {
     flex-basis: 450px;
     /*Define a referência inicial do elemento antes de distribuir o espaço;*/
+}
+
+.card-header {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    font-size: 1.4rem;
+}
+
+.card-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.border-main {
+    border-width: 0px;
+    border-style: inset;
+    border-color: #0275d8;
+    /* box-shadow: 14px 20px rgba(75, 75, 75, 0.247); */
 }
 
 /* Criando para teste */
