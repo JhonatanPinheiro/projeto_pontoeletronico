@@ -1,13 +1,22 @@
-body{
+body {
+    border: 1px solid black;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #DDD;
+}
 
+.form-login{
+    flex-basis: 450px; /*Define a referência inicial do elemento antes de distribuir o espaço;*/
 }
 
 
 /* Criando para teste */
-.bor_blu{  
-   border: 2px solid blue;
+.bor_blu {
+    border: 2px solid blue;
 }
 
-.bor_yel{
+.bor_yel {
     border: 2px solid rgb(255, 238, 0);
- }
+}
