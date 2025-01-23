@@ -1,0 +1,13 @@
+body{
+
+}
+
+
+/* Criando para teste */
+.bor_blu{  
+   border: 2px solid blue;
+}
+
+.bor_yel{
+    border: 2px solid rgb(255, 238, 0);
+ }

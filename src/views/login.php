@@ -11,7 +11,16 @@
   
 </head>
 <body>
-    <div>Login</div>
+    <form action="#" method="post">
+        <div class="login-card card bor_blu">
+            <div class="card-header danger">
+                teste
+            </div>
+            <div class="card-body bor_yel">
+                teste
+            </div>
+        </div>
+    </form>
     
 </body>
 </html>
