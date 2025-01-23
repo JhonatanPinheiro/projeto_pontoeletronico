@@ -20,3 +20,11 @@ body {
 .bor_yel {
     border: 2px solid rgb(255, 238, 0);
 }
+
+.bor_gren {
+    border: 2px solid rgb(0, 255, 55);
+}
+
+.bor_red {
+    border: 2px solid rgb(255, 0, 0);
+}

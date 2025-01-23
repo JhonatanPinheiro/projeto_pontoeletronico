@@ -19,7 +19,10 @@
                 <i class="icofont-runner-alt-1"></i>
             </div>
             <div class="card-body bor_yel">
-
+                <div class="form-group bor_gren">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email" class="form-control" placeholder="Informe o e-mail" autofocus>
+                </div>
             </div>
         </div>
     </form>
