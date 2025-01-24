@@ -1,3 +1,6 @@
 <?php
+#Funções especificas para ajudar carregar as classe
 
-#Funções especificas para criar classe 
+function loadModel($modelName){
+    require_once(MODEL_PATH. "/{$modelName}.php");
+}
