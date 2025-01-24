@@ -6,8 +6,8 @@ if (count($_POST) > 0) {
     try {
         $user = $login->checkLogin();
         echo "Usuário {$user->name} logado com sucesso!";
-    } catch (Exception $e) {
-        echo 'Falha no Login. Usuário ou senha Inválido';
+    } catch (AppException $e) {
+        echo $e->getMessage();
     }
 }
 loadView('login', $_POST);
