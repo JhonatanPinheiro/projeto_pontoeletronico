@@ -22,16 +22,16 @@
                 <?php include(TEMPLATE_PATH . '/messages.php') ?>
                 <div class="form-group">
                     <label for="email">E-mail</label>
-                    <input type="email" id="email" name="email" class="form-control <?= $errors('email') ? 'is-invalid' : '' ?>" value="<?= $email ?>" placeholder="Informe o e-mail" autofocus>
+                    <input type="email" id="email" name="email" class="form-control <?= $errors['email'] ? 'is-invalid' : '' ?>" value="<?= $email ?>" placeholder="Informe o e-mail" autofocus>
                     <div class="invalid-feedback">
-                        <?= $exception->get('email') ?>
+                        <?= $errors['email'] ?>
                     </div>
                 </div>
                 <div class="form-group">
                     <label for="password">Senha</label>
-                    <input type="password" id="password" name="password" class="form-control <?= $errors('password') ? 'is-invalid' : '' ?>" value="<?= $email ?>" placeholder="Informe a senha">
+                    <input type="password" id="password" name="password" class="form-control <?= $errors['password'] ? 'is-invalid' : '' ?>" value="<?= $email ?>" placeholder="Informe a senha">
                     <div class="invalid-feedback">
-                        <?= $exception->get('password') ?>
+                        <?= $errors['password'] ?>
                     </div>
                 </div>
             </div>
