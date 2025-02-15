@@ -1,45 +1,37 @@
 <?php
-# Funções específicas para ajudar a carregar as classes
+#Funções especificas para ajudar carregar as classe
 
 function loadModel($modelName)
 {
-    $file = MODEL_PATH . "/{$modelName}.php";
-    if (file_exists($file)) {
-        require_once($file);
-    } else {
-        error_log("Arquivo do modelo não encontrado: $file");
-    }
+    require_once(MODEL_PATH . "/{$modelName}.php");
 }
 
 function loadView($viewName, $params = array())
 {
-    if (!empty($params) && is_array($params)) {
-        extract($params, EXTR_OVERWRITE);
+    if (count($params) > 0) {
+        foreach ($params as $key => $value) {
+            if (strlen($key) > 0) {
+                // Erro pode estar aqui
+                ${$key} = $value;
+            }
+        }
     }
 
-    $file = VIEW_PATH . "/{$viewName}.php";
-    if (file_exists($file)) {
-        require_once($file);
-    } else {
-        error_log("Arquivo da view não encontrado: $file");
-    }
+    require_once(VIEW_PATH . "/{$viewName}.php");
 }
 
 function loadTemplateView($viewName, $params = array())
 {
-    if (!empty($params) && is_array($params)) {
-        extract($params, EXTR_OVERWRITE);
+    if (count($params) > 0) {
+        foreach ($params as $key => $value) {
+            if (strlen($key) > 0) {
+                // Erro pode estar aqui
+                ${$key} = $value;
+            }
+        }
     }
 
-    # require_once(VIEW_PATH . "/header.php");
-    # require_once(VIEW_PATH . "/menu.php");
-
-    $file = VIEW_PATH . "/{$viewName}.php";
-    if (file_exists($file)) {
-        require_once($file);
-    } else {
-        error_log("Arquivo da template view não encontrado: $file");
-    }
-
-    # require_once(VIEW_PATH . "/footer.php");
+    require_once(TEMPLATE_PATH . "/header.php");
+    require_once(VIEW_PATH . "/{$viewName}.php");
+    require_once(TEMPLATE_PATH . "/footer.php");
 }
