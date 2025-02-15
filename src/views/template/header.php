@@ -17,4 +17,12 @@
             <span class="font-weight-light"> Ponto Eletrônico &nbsp;</span>
             <i class="icofont-runner-alt-1"></i>
         </div>
+        <div class="menu-tog mx-3" style="border: 1px solid blue;">
+            <i class="icofont-navigation-menu">
+
+            </i>
+            <div class="spacer">
+
+            </div>
+        </div>
     </header>
