@@ -1,5 +1,6 @@
 <?php
 $errors = [];
+$message = [];
 
 if ($exception) {
     $message = [
@@ -14,7 +15,7 @@ if ($exception) {
 
 $alertType = '';
 
-if ($message['type'] === 'error') {
+if (isset($message['type']) && $message['type'] === 'error') {
     $alertType = 'danger';
 } else {
     $alertType = 'success';
