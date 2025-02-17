@@ -2,6 +2,8 @@
     /* THEMA 1 */
     --white-default: #f6eded;
     --blue-default: #0275d8;
+    --dark-blue-selected-default: #0166be;
     --black-default: #000;
     --green-default: #bcbcbc;
+    --light-blue-selected-default: rgb(0, 149, 255);
 }
