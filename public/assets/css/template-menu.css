@@ -1,8 +1,7 @@
 body {
     display: grid;
     grid-template-columns: 250px 1fr;
-    border: 1px solid red;
-    grid-row: 64px 1fr 64px;
+    grid-template-rows: 164px 1fr 64px;
     grid-template-areas:
         "header header"
         "sidebar content"
@@ -12,7 +11,7 @@ body {
     background-color: #DDD;
 }
 
-body.hide-sidebar{
+body.hide-sidebar {
     grid-template-columns: 1fr;
     grid-template-areas:
         "header"
@@ -20,24 +19,88 @@ body.hide-sidebar{
         "footer";
 }
 
-header.header {
-    grid-area: header;
-    background-color: red;
-
+header.header .logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-size: 1.6rem;
+    flex-basis: 250px;
+    height: 100%;
 }
 
-main.content {
-    grid-area: content;
-    background-color:green;
+header.header .menu-toggle {
+    color: #FFF;
+    cursor: pointer;
+}
+
+header.header .spacer {
+    flex: 1;
+}
+
+header.header .dropdown-button {
+    position: relative;
+}
+
+header.header .dropdown-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    font-size: 1rem;
+    color: #FFF;
+    cursor: pointer;
+}
+
+header.header .dropdown-content {
+    position: absolute;
+    background-color: #f9f9f9;
+    padding: 10px 0px;
+    z-index: 100;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, .2);
+}
+
+header.header .dropdown-content ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+header.header .dropdown-content a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #000;
+    padding-left: 3px;
+}
+
+header.header .dropdown-content a:hover {
+    text-decoration: underline;
+    padding-left: 3px;
 }
 
 aside.sidebar {
     grid-area: sidebar;
-    background-color: yellow; 
+    background-color: yellow;
 }
 
-body.hide-sidebar aside.sidebar{
+header.header {
+    grid-area: header;
+    background: #0275d8;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+    box-shadow:
+        0 2px 4px -1px rgba(0, 0, 0, .2),
+        0 4px 4px -1px rgba(0, 0, 0, .14),
+        0 1px 10px 0px rgba(0, 0, 0, .12);
+}
+
+body.hide-sidebar aside.sidebar {
     display: none;
+}
+
+main.content {
+    grid-area: content;
+    background-color: green;
 }
 
 footer.footer {
