@@ -7,20 +7,40 @@ body {
         "header header"
         "sidebar content"
         "sidebar footer";
+    height: 100vh;
+    margin: 0;
+    background-color: #DDD;
+}
+
+body.hide-sidebar{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        "header"
+        "content"
+        "footer";
 }
 
 header.header {
     grid-area: header;
+    background-color: red;
+
 }
 
 main.content {
     grid-area: content;
+    background-color:green;
 }
 
 aside.sidebar {
     grid-area: sidebar;
+    background-color: yellow; 
+}
+
+body.hide-sidebar aside.sidebar{
+    display: none;
 }
 
 footer.footer {
     grid-area: footer;
+    background-color: blue;
 }
