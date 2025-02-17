@@ -27,7 +27,7 @@ body {
 .border-main {
     border-width: 0px;
     border-style: inset;
-    border-color: #0275d8;
+    border-color: var(--blue-default);
     /* box-shadow: 14px 20px rgba(75, 75, 75, 0.247); */
 }
 

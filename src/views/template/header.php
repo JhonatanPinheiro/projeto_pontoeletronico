@@ -9,6 +9,8 @@
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/icofont.min.css">
     <link rel="stylesheet" href="assets/css/template-menu.css">
+    <link rel="stylesheet" href="assets/css/color-personalize.css">
+    
 
 </head>
 
