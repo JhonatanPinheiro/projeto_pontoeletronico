@@ -1,14 +1,14 @@
 body {
     display: grid;
     grid-template-columns: 250px 1fr;
-    grid-template-rows: 164px 1fr 64px;
+    grid-template-rows: 64px 1fr 64px;
     grid-template-areas:
         "header header"
         "sidebar content"
         "sidebar footer";
     height: 100vh;
     margin: 0;
-    background-color: #DDD;
+    background-color: #f6eded;
 }
 
 body.hide-sidebar {
@@ -23,14 +23,14 @@ header.header .logo {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: #FFF;
+    color: #f6eded;
     font-size: 1.6rem;
     flex-basis: 250px;
     height: 100%;
 }
 
 header.header .menu-toggle {
-    color: #FFF;
+    color: #f6eded;
     cursor: pointer;
 }
 
@@ -48,13 +48,14 @@ header.header .dropdown-button {
     align-items: center;
     height: 100%;
     font-size: 1rem;
-    color: #FFF;
+    color: #f6eded;
     cursor: pointer;
 }
 
 header.header .dropdown-content {
     position: absolute;
-    background-color: #f9f9f9;
+    min-width: 100%;
+    background-color: #f6eded;
     padding: 10px 0px;
     z-index: 100;
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, .2);
@@ -79,7 +80,7 @@ header.header .dropdown-content a:hover {
 
 aside.sidebar {
     grid-area: sidebar;
-    background-color: yellow;
+    background-color: #f6eded;
 }
 
 header.header {
