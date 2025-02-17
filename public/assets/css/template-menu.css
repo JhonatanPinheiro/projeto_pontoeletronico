@@ -101,10 +101,13 @@ body.hide-sidebar aside.sidebar {
 
 main.content {
     grid-area: content;
-    background-color: green;
+    background-color: #c1c0c0;
 }
 
 footer.footer {
     grid-area: footer;
-    background-color: blue;
+    background-color: #f6eded;
+    margin-top: 8px;
+    font-weight: bold;
+    text-align: center;
 }
