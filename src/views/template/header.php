@@ -10,11 +10,9 @@
     <link rel="stylesheet" href="assets/css/icofont.min.css">
     <link rel="stylesheet" href="assets/css/template-menu.css">
     <link rel="stylesheet" href="assets/css/color-personalize.css">
-
-
 </head>
 
-<body>
+<body class="hide-sidebar">
     <header class="header">
         <div class="logo">
             <span class="font-weight-light mr-2"> Ponto Eletrônico &nbsp;</span>
