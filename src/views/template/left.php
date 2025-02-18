@@ -10,7 +10,7 @@
             <li class="nav-item">
                 <a href="day_records.php">
                     <i class="icofont-ui-calendar mr-2"></i>
-                    Relatório Mensal 
+                    Relatório Mensal
                 </a>
             </li>
             <li class="nav-item">

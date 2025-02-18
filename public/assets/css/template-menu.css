@@ -96,8 +96,39 @@ header.header .dropdown:hover {
 }
 
 aside.sidebar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    box-shadow: -5px 0px 25px 1px rgba(0, 0, 0, 0.4);
     grid-area: sidebar;
     background-color: var(--white-default);
+}
+
+aside.sidebar .menu {
+    width: 100%;
+    flex-grow: 1;
+}
+
+aside.sidebar .menu ul.nav-list {
+    list-style: none;
+    padding: 6px;
+    margin: 0px;
+}
+
+aside.sidebar .menu li.nav-item {
+    margin: 0px;
+    padding: 5px 0px 5px 10px;
+}
+
+aside.sidebar .menu li.nav-item a{
+    font-size: 1.0rem;
+    display: block;
+    text-decoration: none;
+}
+
+aside.sidebar .menu li.nav-item:hover {
+    background-color: var(--green-select-default);
+    font-weight: 600;
 }
 
 header.header {
