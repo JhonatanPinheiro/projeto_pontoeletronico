@@ -29,7 +29,7 @@
         <div class="dropdown">
             <div class="dropdown-button">
                 <span>Usuário Mock</span>
-                <i class="icofont-simple-down ml-2"></i>
+                <i class="icofont-simple-down mx-2"></i>
             </div>
             <div class="dropdown-content">
                 <ul class="nav-list">
