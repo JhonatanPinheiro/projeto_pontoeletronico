@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="assets/css/icofont.min.css">
     <link rel="stylesheet" href="assets/css/template-menu.css">
     <link rel="stylesheet" href="assets/css/color-personalize.css">
-    
+
 
 </head>
 
@@ -34,8 +34,9 @@
             <div class="dropdown-content">
                 <ul class="nav-list">
                     <li class="nav-item">
-                        <a href="logout.php">Sair
-                            <i class="iconfont-logout mr-2"></i>
+                        <a href="logout.php">
+                            <i class="icofont-logout mr-2"></i>
+                            Sair
                         </a>
                     </li>
                 </ul>
