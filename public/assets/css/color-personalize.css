@@ -5,5 +5,6 @@
     --dark-blue-selected-default: #0166be;
     --black-default: #000;
     --green-default: #bcbcbc;
+    --green-select-default:  rgb(217, 217, 217);
     --light-blue-selected-default: rgb(0, 149, 255);
 }

@@ -68,10 +68,11 @@ header.header .dropdown:hover .dropdown-content {
 
 header.header .dropdown-content ul {
     list-style: none;
-    padding-left: 0;
+    padding-left: 0px;
 }
 
 header.header .dropdown-content a {
+    display: flex;
     text-decoration: none;
     font-weight: 300;
     color: #000;
@@ -85,10 +86,11 @@ header.header .dropdown-content a:hover {
     font-weight: bold;
     color: var(--light-blue-selected-default);
     transition: 500ms;
+    background-color: var(--green-select-default);
 }
 
 header.header .dropdown:hover {
-    background:var(--dark-blue-selected-default);
+    background: var(--dark-blue-selected-default);
 }
 
 aside.sidebar {
@@ -98,7 +100,7 @@ aside.sidebar {
 
 header.header {
     grid-area: header;
-    background:var(--blue-default);
+    background: var(--blue-default);
     display: flex;
     align-items: center;
     z-index: 10;
