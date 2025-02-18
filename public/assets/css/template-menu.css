@@ -75,9 +75,10 @@ header.header .dropdown-content a {
     display: flex;
     text-decoration: none;
     font-weight: 300;
-    color: #000;
+    color: var(--black-default);
     padding-left: 3px;
-    font-size: 18px;
+    font-size: 16px;
+    padding: 6px;
 }
 
 header.header .dropdown-content a:hover {
