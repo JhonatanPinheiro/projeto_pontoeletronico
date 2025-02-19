@@ -157,5 +157,7 @@ footer.footer {
     background-color: var(--white-default);
     margin-top: 8px;
     font-weight: bold;
+    display: flex;
     text-align: center;
+    justify-content: center;
 }
