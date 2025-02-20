@@ -120,7 +120,7 @@ aside.sidebar .menu li.nav-item {
     padding: 5px 0px 5px 10px;
 }
 
-aside.sidebar .menu li.nav-item a{
+aside.sidebar .menu li.nav-item a {
     font-size: 1.0rem;
     display: block;
     text-decoration: none;
@@ -145,6 +145,38 @@ header.header {
 
 body.hide-sidebar aside.sidebar {
     display: none;
+}
+
+aside.sidebar .sidebar-widgets {
+    position: sticky;
+    bottom: 20px;
+}
+
+aside.sidebar .sidebar-widget {
+    display: flex;
+    align-items: center;
+}
+
+aside.sidebar .sidebar-widget .icon {
+    font-size: 1.6rem;
+    align-items: center;
+    margin: 0.3rem;
+}
+
+aside.sidebar .sidebar-widget .info {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex: 1;
+}
+
+.division {
+    width: 80%;
+    border: outset 1.7px var(--green-select-default);
+}
+
+aside.sidebar .info .main {
+    font-size: 1.8rem;
 }
 
 main.content {
