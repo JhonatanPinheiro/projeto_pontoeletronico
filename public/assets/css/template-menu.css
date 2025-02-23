@@ -88,7 +88,7 @@ header.header .dropdown-content a:hover {
     font-weight: bold;
     color: var(--light-blue-selected-default);
     transition: 500ms;
-    background-color: var(--green-select-default);
+    background-color: var(--grey-select-default);
 }
 
 header.header .dropdown:hover {
@@ -127,7 +127,7 @@ aside.sidebar .menu li.nav-item a {
 }
 
 aside.sidebar .menu li.nav-item:hover {
-    background-color: var(--green-select-default);
+    background-color: var(--grey-select-default);
     font-weight: 600;
 }
 
@@ -172,7 +172,7 @@ aside.sidebar .sidebar-widget .info {
 
 .division {
     width: 80%;
-    border: outset 1.7px var(--green-select-default);
+    border: outset 1.7px var(--grey-select-default);
 }
 
 aside.sidebar .info .main {
@@ -181,7 +181,46 @@ aside.sidebar .info .main {
 
 main.content {
     grid-area: content;
-    background-color: var(--green-default);
+    background-color: var(--white-absolut-default);
+    margin: 8px;
+    padding: 8px;
+    border-radius: 5px;
+    box-shadow: 0 0 25px 0 rgba(0, 0, 0, 0.8);
+}
+
+main.content .content-title {
+    display: flex;
+    align-items: center;
+    padding-bottom: 5px;
+    border-bottom: outset 1.5px var(--grey-select-default);
+
+}
+
+main.content .content-title .icon {
+    font-size: 2.8rem;
+    border-bottom: 5px outset var(--dark-blue-selected-default);
+    background-color: var(--white-default);
+}
+
+main.content .content-title .icon:hover {
+    font-size: 2.8rem;
+    border-bottom: 5px inset var(--dark-blue-selected-default);
+}
+
+main.content .content-title h1 {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin: 0;
+}
+
+main.content .content-title h2 {
+    font-size: 1.2rem;
+    color: var(--grey-dark-text);
+    font-weight: 500;
+}
+
+.record{
+    font-size: 1.6rem;
 }
 
 footer.footer {

@@ -13,12 +13,12 @@
         </div>
         <div class="card-body">
             <div class="d-flex m-5 justify-content-around">
-                <span>Entrada 1:</span>
-                <span>Saída 1 (Almoço):</span>
+                <span class="record">Entrada 1:</span>
+                <span class="record">Saída 1 (Almoço):</span>
             </div>
             <div class="d-flex m-5 justify-content-around">
-                <span>Entrada 2 (Volta do Almoço):</span>
-                <span>Saída 2:</span>
+                <span class="record">Entrada 2 (Volta do Almoço):</span>
+                <span class="record">Saída 2:</span>
             </div>
         </div>
         <div class="card-footer d-flex justify-content-center">

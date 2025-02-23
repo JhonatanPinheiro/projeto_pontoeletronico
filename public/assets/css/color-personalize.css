@@ -1,10 +1,12 @@
 :root {
     /* THEMA 1 */
     --white-default: #f6eded;
+    --white-absolut-default: #ffffff;
     --blue-default: #0275d8;
     --dark-blue-selected-default: #0166be;
     --black-default: #000;
-    --green-default: #bcbcbc;
-    --green-select-default:  rgb(217, 217, 217);
+    --grey-default: #bcbcbc;
+    --grey-select-default:  rgb(217, 217, 217);
+    --grey-dark-text: rgb(100, 100, 100);
     --light-blue-selected-default: rgb(0, 149, 255);
 }
