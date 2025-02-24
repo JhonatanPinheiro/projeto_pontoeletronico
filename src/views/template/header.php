@@ -26,7 +26,15 @@
         </div>
         <div class="dropdown">
             <div class="dropdown-button">
-                <span>Usuário Mock</span>
+                <img class="avatar"
+                    src="
+                            <?= "http://www.gravatar.com/avatar.php?gravata_id=" . md5(strtolower(
+                                trim($_SESSION['user']->email)
+                            ))
+                            ?>" alt="user">
+                <span class="ml-3">
+                    <?= $_SESSION['user']->name ?>
+                </span>
                 <i class="icofont-simple-down mx-2"></i>
             </div>
             <div class="dropdown-content">
