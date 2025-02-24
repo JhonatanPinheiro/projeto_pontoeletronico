@@ -37,7 +37,7 @@
                 </span>
                 <i class="icofont-simple-down mx-2"></i>
             </div>
-            <div class="dropdown-content">
+            <div class="dropdown-content">-
                 <ul class="nav-list">
                     <li class="nav-item">
                         <a href="logout.php">
