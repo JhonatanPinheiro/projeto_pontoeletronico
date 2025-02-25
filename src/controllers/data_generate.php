@@ -1,4 +1,5 @@
 <?php
+// loadModel('WorkingHours');
 
 function getDayTemplateByOdds($regularRate, $extraRate, $lazyRate)
 {
@@ -42,6 +43,6 @@ function getDayTemplateByOdds($regularRate, $extraRate, $lazyRate)
     }
 }
 
-print_r(getDayTemplateByOdds(20,80,10));
-
+// print_r(getDayTemplateByOdds(20,80,10));
+echo 'Cheguei!';
 
