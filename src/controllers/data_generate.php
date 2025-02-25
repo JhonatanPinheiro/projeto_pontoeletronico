@@ -1,5 +1,5 @@
 <?php
-// loadModel('WorkingHours');
+loadModel('WorkingHours');
 
 function getDayTemplateByOdds($regularRate, $extraRate, $lazyRate)
 {
