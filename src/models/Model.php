@@ -6,7 +6,6 @@ class Model
     protected static $columns = [];
     protected $values = [];
 
-
     function __construct($arr)
     {
         $this->loadFromArray($arr);

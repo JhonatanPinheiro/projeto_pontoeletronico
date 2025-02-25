@@ -38,7 +38,6 @@ class Database
         }
 
         $id = $conn->insert_id;
-        print_r($conn);
         $conn->close();
         return $id;
     }
