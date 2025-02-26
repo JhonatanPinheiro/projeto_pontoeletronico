@@ -22,7 +22,13 @@ class Model
 
     public function __get($key)
     {
-        return $this->values[$key];
+        // Verifica se a chave existe no array antes de tentar acessar
+        if (isset($this->values[$key])) {
+            return $this->values[$key];
+        }
+        // Se a chave não existir, pode lançar um aviso ou retornar um valor padrão
+        // Retornar null ou outro valor de sua escolha
+        return null;
     }
 
     public function __set($key, $value)
