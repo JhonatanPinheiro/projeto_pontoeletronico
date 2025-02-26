@@ -13,7 +13,7 @@ function getDayTemplateByOdds($regularRate, $extraRate, $lazyRate)
         'time4' => '17:00:00',
         'worked_time' => DAILY_TIME,
         'class' => 'A',
-        'description' => ''
+        'description' => 'Jornada de trabalho com Horário Padrão'
     ];
 
     $extraHourDayTemplate = [
@@ -23,7 +23,7 @@ function getDayTemplateByOdds($regularRate, $extraRate, $lazyRate)
         'time4' => '18:00:00',
         'worked_time' => DAILY_TIME + 3600,
         'class' => 'B',
-        'description' => ''
+        'description' => 'Jorndade de trabalho com Hora Extra'
     ];
 
     $lazyDayTemplate = [
@@ -33,7 +33,7 @@ function getDayTemplateByOdds($regularRate, $extraRate, $lazyRate)
         'time4' => '17:00:00',
         'worked_time' => DAILY_TIME - 1800,
         'class' => 'C',
-        'description' => ''
+        'description' => 'Jornada de trabalho menor'
     ];
 
     $value = rand(0, 100);
