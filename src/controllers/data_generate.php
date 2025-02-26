@@ -11,9 +11,9 @@ function getDayTemplateByOdds($regularRate, $extraRate, $lazyRate)
         'time2' => '12:00:00',
         'time3' => '13:00:00',
         'time4' => '17:00:00',
+        'worked_time' => DAILY_TIME,
         'class' => 'A',
-        'description' => '',
-        'worked_time' => DAILY_TIME
+        'description' => ''
     ];
 
     $extraHourDayTemplate = [
@@ -21,9 +21,9 @@ function getDayTemplateByOdds($regularRate, $extraRate, $lazyRate)
         'time2' => '12:00:00',
         'time3' => '13:00:00',
         'time4' => '18:00:00',
+        'worked_time' => DAILY_TIME + 3600,
         'class' => 'B',
-        'description' => '',
-        'worked_time' => DAILY_TIME + 3600
+        'description' => ''
     ];
 
     $lazyDayTemplate = [
@@ -31,9 +31,9 @@ function getDayTemplateByOdds($regularRate, $extraRate, $lazyRate)
         'time2' => '12:00:00',
         'time3' => '13:00:00',
         'time4' => '17:00:00',
+        'worked_time' => DAILY_TIME - 1800,
         'class' => 'C',
-        'description' => '',
-        'worked_time' => DAILY_TIME - 1800
+        'description' => ''
     ];
 
     $value = rand(0, 100);
@@ -63,9 +63,10 @@ function populateWorkingHours($userId, $initialDate, $regularRate, $extraRate, $
         $columns['work_date'] = $currentDate;
     }
 }
-
-
+$lastMonth = strtotime('first day of last month');
 populateWorkingHours(1, date('Y-m-1'), 70, 20, 10);
+populateWorkingHours(3, date('Y-m-1'), 20, 75, 5);
+populateWorkingHours(4, date('Y-m-1'), 20, 10, 70);
 
 #print_r(getDayTemplateByOdds(20, 80, 10));
 #echo 'Cheguei!';

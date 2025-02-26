@@ -12,6 +12,8 @@ class WorkingHours extends Model
         'time2',
         'time3',
         'time4',
-        'worked_time'
+        'worked_time',
+        'class',
+        'description'
     ];
 }
