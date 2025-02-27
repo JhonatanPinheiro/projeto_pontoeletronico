@@ -33,4 +33,43 @@ class WorkingHours extends Model
 
         return $registry;
     }
+
+    public function getNextTime()
+    {
+        if (!$this->time1) return 'time1';
+        if (!$this->time2) return 'time2';
+        if (!$this->time3) return 'time3';
+        if (!$this->time4) return 'time4';
+        return null;
+    }
+
+    public function innout($time)
+    {
+        $timeColumn = $this->getNextTime();
+
+        if (!$timeColumn) {
+            throw new AppException("Você já fez os 4 batimentos do dia permitidos!");
+        }
+
+        $this->addTimeColumnToTimes($this->timeColumn = $time);
+
+        if ($this->id) {
+            $this->update();
+        } else {
+            $this->insert();
+        }
+    }
+
+    // Criada pela Júlio
+    public function addTimeColumnToTimes($timeColumn)
+    {
+        $times = ['time1', 'time2', 'time3', 'time4'];
+
+        foreach ($times as $time) {
+            if (empty($this->values[$time])) {
+                $this->values[$time] = $timeColumn;
+                break;
+            }
+        }
+    }
 }

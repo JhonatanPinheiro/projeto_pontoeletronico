@@ -4,7 +4,7 @@ class Model
 {
     protected static $tableName = '';
     protected static $columns = [];
-    protected $values = [];
+    public $values = [];
 
     function __construct($arr)
     {
@@ -41,7 +41,6 @@ class Model
         #Retorna o nome da classe em que um método estático foi chamado - get_called_class()
         $class =  get_called_class();
         $result = static::getResultSetFromSelect($filters, $columns);
-
         return $result ? new $class($result->fetch_assoc()) : null;
     }
 
@@ -85,12 +84,15 @@ class Model
 
     public function update()
     {
+
         $sql = "UPDATE " . static::$tableName . " SET ";
         foreach (static::$columns as $col) {
             $sql .= " $col = " . static::getFormatedValue($this->$col) . ",";
         }
+
         $sql[strlen($sql) - 1] = ' ';
         $sql .= "WHERE id = $this->id";
+
         Database::executeSQL($sql);
     }
 
