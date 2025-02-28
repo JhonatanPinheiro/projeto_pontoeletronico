@@ -1,3 +1,13 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ponto Eletrônico</title>
+    <link rel="stylesheet" href="assets/css/color-personalize.css">
+    <link rel="stylesheet" href="assets/css/day-records.css">
+</head>
 <main class="content">
     <?php
     renderTitle(
@@ -42,13 +52,3 @@
         </div>
     </form>
 </main>
-<style>
-    .point-green {
-        border-bottom: 2px solid #14A44D;
-
-    }
-
-    .point-orange {
-        border-bottom: 2px solid  #E4A11B;
-    }
-</style>
