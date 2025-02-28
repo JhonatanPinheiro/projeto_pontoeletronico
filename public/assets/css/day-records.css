@@ -1,8 +1,8 @@
 .point-green {
-    border-bottom: 2px solid #14A44D;
+    border-bottom: 2px solid var(--green-default);
 
 }
 
 .point-orange {
-    border-bottom: 2px solid #E4A11B;
+    border-bottom: 2px solid var(--orange-dark-default);
 }

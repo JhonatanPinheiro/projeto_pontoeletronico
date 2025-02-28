@@ -7,6 +7,8 @@
     <title>Ponto Eletrônico</title>
     <link rel="stylesheet" href="assets/css/color-personalize.css">
     <link rel="stylesheet" href="assets/css/day-records.css">
+
+
 </head>
 <main class="content">
     <?php
