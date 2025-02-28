@@ -14,12 +14,12 @@
         </div>
         <div class="card-body">
             <div class="d-flex m-5 justify-content-around">
-                <span class="record">Entrada 1: <?= $records->time1 ?? '--' ?> </span>
-                <span class="record">Saída: <?= $records->time2 ?? '--' ?> </span>
+                <span class="record">Entrada 1: <span class="point-green"> <?= $records->time1 ?? '--' ?> </span> </span>
+                <span class="record">Saída: <span class="point-orange"> <?= $records->time2 ?? '--' ?> </span> </span>
             </div>
             <div class="d-flex m-5 justify-content-around">
-                <span class="record">Entrada 2: <?= $records->time3 ?? '--' ?> </span>
-                <span class="record">Saída 2: <?= $records->time4 ?? '--' ?> </span>
+                <span class="record">Entrada 2: <span class="point-orange"> <?= $records->time3 ?? '--' ?> </span> </span>
+                <span class="record">Saída 2: <span class="point-green"> <?= $records->time4 ?? '--' ?> </span> </span>
             </div>
         </div>
         <div class="card-footer d-flex justify-content-center">
@@ -42,3 +42,13 @@
         </div>
     </form>
 </main>
+<style>
+    .point-green {
+        border-bottom: 2px solid #14A44D;
+
+    }
+
+    .point-orange {
+        border-bottom: 2px solid  #E4A11B;
+    }
+</style>
