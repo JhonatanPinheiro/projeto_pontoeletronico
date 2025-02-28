@@ -87,7 +87,7 @@ class WorkingHours extends Model
         if ($t3) $part2 = $t3->diff(new DateTime());
         if ($t4) $part2 = $t3->diff($t4);
 
-        return sumIntervals($part1, $part2);
+        return sumIntervals($part1, $part2); #MEXI AQUI
     }
 
     function getLunchInterval()
@@ -103,7 +103,8 @@ class WorkingHours extends Model
 
     function getExitTime()
     {
-        [$t1,,, $t4] = $this->getTimes();
+        [$t1,,,$t4] = $this->getTimes();
+        
         $workday = DateInterval::createFromDateString('8 hours');
         // $defaultlunchInterval = DateInterval::createFromDateString('1 hours');
 

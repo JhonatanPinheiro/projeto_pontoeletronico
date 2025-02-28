@@ -26,12 +26,12 @@
         </div>
         <div class="card-body">
             <div class="d-flex m-5 justify-content-around">
-                <span class="record">Entrada 1: <span class="point-green"> <?= $records->time1 ?? '--' ?> </span> </span>
-                <span class="record">Saída: <span class="point-orange"> <?= $records->time2 ?? '--' ?> </span> </span>
+                <span class="record">Entrada 1: <span class="point-green"> <?= $workingHours->time1 ?? '--' ?> </span> </span>
+                <span class="record">Saída: <span class="point-orange"> <?= $workingHours->time2 ?? '--' ?> </span> </span>
             </div>
             <div class="d-flex m-5 justify-content-around">
-                <span class="record">Entrada 2: <span class="point-orange"> <?= $records->time3 ?? '--' ?> </span> </span>
-                <span class="record">Saída 2: <span class="point-green"> <?= $records->time4 ?? '--' ?> </span> </span>
+                <span class="record">Entrada 2: <span class="point-orange"> <?= $workingHours->time3 ?? '--' ?> </span> </span>
+                <span class="record">Saída 2: <span class="point-green"> <?= $workingHours->time4 ?? '--' ?> </span> </span>
             </div>
         </div>
         <div class="card-footer d-flex justify-content-center">
