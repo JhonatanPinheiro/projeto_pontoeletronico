@@ -90,6 +90,17 @@ class WorkingHours extends Model
         return sumIntervals($part1, $part2);
     }
 
+    function getLunchInterval()
+    {
+        [, $t2, $t3,] = $this->getTimes();
+        $breakInterval = new DateInterval('PT0S');
+
+        if ($t2) $breakInterval = $t2->diff(new DateTime());
+        if ($t3) $breakInterval = $t3->diff($t2);
+
+        return $breakInterval;
+    }
+
     private function getTimes()
     {
         $times = [];

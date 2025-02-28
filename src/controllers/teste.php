@@ -4,7 +4,18 @@
 loadModel('WorkingHours');
 
 $wh = WorkingHours::loadFromUserAndDate(1, date('Y-m-d'));
+
+
 echo '<hr>';
-$workedInterval = $wh->getWorkedInterval()->format('%H:%I:%S');
-print_r($workedInterval);
+$workedIntervalString = $wh->getWorkedInterval()->format('%H:%I:%S');
+print_r($workedIntervalString);
+
+
+echo '<br>';
+echo '<br>';
+echo '<br>';
+
+$lunchIntervalString = $wh->getLunchInterval()->format(('%H:%I:%S'));
+echo '<hr>';
+print_r($lunchIntervalString);
 
