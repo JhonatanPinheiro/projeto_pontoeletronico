@@ -1,6 +1,7 @@
 <?php
 //Controller Temporário para testes
-print_r(getLastDayOfMonth('2020-04-04'));
+// print_r(getLastDayOfMonth('2020-04-04'));
+// print_r(getFirstDayOfMonth('2020-04-04'));
 
 
 // $wh = WorkingHours::loadFromUserAndDate(1,date('Y-m-d'));
