@@ -43,6 +43,19 @@ class WorkingHours extends Model
         return null;
     }
 
+    public function getActiveClock()
+    {
+        $nextTime = $this->getNextTime();
+
+        if ($nextTime === 'time1' || $nextTime === 'time3') {
+            return 'exitTime';
+        } elseif ($nextTime === 'time2' || $nextTime === 'time4') {
+            return 'workedInterval';
+        } else {
+            return null;
+        }
+    }
+
     public function innout($time)
     {
         $timeColumn = $this->getNextTime();
@@ -103,8 +116,8 @@ class WorkingHours extends Model
 
     function getExitTime()
     {
-        [$t1,,,$t4] = $this->getTimes();
-        
+        [$t1,,, $t4] = $this->getTimes();
+
         $workday = DateInterval::createFromDateString('8 hours');
         // $defaultlunchInterval = DateInterval::createFromDateString('1 hours');
 
