@@ -1,7 +1,7 @@
 <?php
 session_start();
 requireValidSession();
-loadModel('WorkingHours');
+
 // $date = (new DateTime())->getTimestamp();
 // $today = strftime('%d de %B de %Y', $date);
 // $todayMasc = strftime('%d %m %y', $date);
