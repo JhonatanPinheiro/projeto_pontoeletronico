@@ -26,7 +26,8 @@ function activateClock() {
 
     setInterval(function () {
         const parts = activeClock.innerHTML.split(':')
-        activeClock.innerHTML = addOneSecond(parts[0], parts[1], parts[2])
+        // activeClock.innerHTML = addOneSecond(parts[0], parts[1], parts[2]) OU podemos fazer da maneira de baixo
+        activeClock.innerHTML = addOneSecond(...parts)
     }, 1000)
 }
 
