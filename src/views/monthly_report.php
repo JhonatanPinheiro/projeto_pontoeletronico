@@ -1,3 +1,4 @@
+
 <main class="content">
     <?php
     renderTitle(
@@ -20,9 +21,8 @@
                 <?php foreach ($report as $registry): ?>
                     <tr class="">
                         <td class="">
-                            <?= $registry->work_date  ?>
+                            <?= formatDateWithLocale($registry->work_date, '%A, %d de %B de %Y') ?>
                         </td>
-
 
                         <td class="">
                             <?= $registry->time1  ?>

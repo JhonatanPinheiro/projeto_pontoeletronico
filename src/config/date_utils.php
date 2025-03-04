@@ -85,3 +85,41 @@ function getTimeStringFromSeconds($seconds)
 
     return sprintf('%02d:%02d:%02d', $h, $m, $s);
 }
+
+// function formatDateWithLocale($date, $pattern)
+// {
+//     $time = getDateAsDateTime($date)->getTimespamp();
+
+//     return strftime($pattern, $time);
+
+// }
+
+function formatDateWithLocale($date, $pattern)
+{
+    $dateTime = getDateAsDateTime($date); // Verifique se getDateAsDateTime está retornando um objeto DateTime válido.
+    
+    // Convertendo o padrão para um formato compatível com DateTime::format()
+    $formattedDate = $dateTime->format('l, d \d\e F \d\e Y'); // Exemplo de formato padrão para 'Segunda-feira, 01 de Março de 2025'
+
+    // Traduzir o nome do mês e o dia da semana, se necessário.
+    setlocale(LC_TIME, 'pt_BR.UTF-8'); // Define o local para português brasileiro.
+    return $formattedDate; // Aplica a tradução se necessário.
+}
+
+
+// function formatDateWithLocale($date, $pattern)
+// {
+//     $f = new IntlDateFormatter('pt-BR',IntlDateFormatter::LONG,IntlDateFormatter::NONE);
+//     // Locate::getDefault
+//     // Convertendo a data para um objeto DateTime
+//     $dateTime = getDateAsDateTime($date); 
+
+//     // Formato compatível com DateTime::format() para dia da semana, mês e ano
+//     $formattedDate = $dateTime->format('l, d \d\e F \d\e Y'); // Exemplo: "Segunda-feira, 01 de Março de 2025"
+    
+//     // Usando a função setlocale para garantir que o nome do dia e do mês sejam exibidos em português
+//     setlocale(LC_TIME, 'pt_BR.UTF-8');
+    
+//     return $formattedDate;
+// }
+
