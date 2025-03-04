@@ -1,4 +1,5 @@
-USE INNOUT;
+CREATE DATABASE electronic_point;
+USE electronic_point;
 
 DROP TABLE IF EXISTS working_hours, users;
 CREATE TABLE users (
