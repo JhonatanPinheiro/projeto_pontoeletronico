@@ -1,4 +1,3 @@
-
 <main class="content">
     <?php
     renderTitle(
@@ -12,10 +11,10 @@
             <thead class="bg-primary text-white">
                 <th class="">Dia</th>
                 <th class="">Entrada 1</th>
-                <th class="">Saída</th>
-                <th class=""> Entrada 2</th>
-                <th class=""> Saída 2</th>
-                <th class=""> Saldo</th>
+                <th class="">Saída 1</th>
+                <th class="">Entrada 2</th>
+                <th class="">Saída 2</th>
+                <th class="">Saldo</th>
             </thead>
             <tbody>
                 <?php foreach ($report as $registry): ?>
@@ -44,7 +43,7 @@
                 <?php endforeach ?>
                 <tr class='bg-primary text-white font-weight-bold'>
                     <td colspan="5" class='text-center'> Horas Trabalhadas: <span><?= $sumOfWorkedTime ?></span> </td>
-                    <td colspan="1"> Saldo Mensal:  <span><?= $balance ?></span> </td>
+                    <td colspan="1"> Saldo Mensal: <span><?= $balance ?></span> </td>
                 </tr>
             </tbody>
         </table>
