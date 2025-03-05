@@ -38,7 +38,7 @@
                             <?= $registry->time4  ?>
                         </td>
                         <td class="">
-                            <?= $balance ?>
+                            <?= $registry->getBalance() ?>
                         </td>
                     </tr>
                 <?php endforeach ?>

@@ -134,6 +134,26 @@ class WorkingHours extends Model
         }
     }
 
+    function getBalance()
+    {
+        if (!$this->time1 && !isPastWorkday($this->work_date)) return '';
+        if ($this->worked_time == DAILY_TIME) return '';
+
+        $balance =  $this->worked_time - DAILY_TIME;
+        $balanceString = getTimeStringFromSeconds(abs($balance));
+        $sign = $this->worked_time >= DAILY_TIME ? "+" : "-";
+
+        if ($sign === '+') {
+            return "<span class='text-success'> $sign $balanceString </span>";
+        } elseif ($sign === '-') {
+            return "<span class='text-danger'> $sign $balanceString </span>";
+        } else {
+            return 'Entre em contato com o Administrador do sistema!';
+        }
+
+        // return $sign === "+" ? "<span class='text-success'> $sign $balanceString </span>" : "<span class='text-danger'> $sign $balanceString </span>";
+    }
+
     public static function getMonthlyReport($userId, $date)
     {
         $registries = [];
