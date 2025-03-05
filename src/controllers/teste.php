@@ -1,5 +1,11 @@
 <?php
-    phpinfo();
+
+// echo User::getCount();
+// echo User::getCount(['id' =>3]);
+
+
+
+// phpinfo();
 //Controller Temporário para testes
 // print_r(getLastDayOfMonth('2020-04-04'));
 // print_r(getFirstDayOfMonth('2020-04-04'));
