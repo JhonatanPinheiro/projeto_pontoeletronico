@@ -17,7 +17,7 @@ for ($day = 1; $day <= $lastDay; $day++) {
     // $registry = $registries[$date];
     $registry = isset($registries[$date]) ? $registries[$date] : null;
 
-    if (isPastWorkd($date)) $workDay++;
+    if (isPastWorkday($date)) $workDay++;
 
     if ($registry) {
         $sumOfWorkedTime += $registry->worked_time;

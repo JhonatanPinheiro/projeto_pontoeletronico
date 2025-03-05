@@ -72,7 +72,7 @@ function getSecondsFromDateInterval($interval)
     return ($d2->getTimestamp() - $d1->getTimestamp());
 }
 
-function isPastWorkd($date)
+function isPastWorkday($date)
 {
     return !isWeekend($date) && isBefore($date, new DateTime());
 }
@@ -122,4 +122,3 @@ function formatDateWithLocale($date, $pattern)
     
 //     return $formattedDate;
 // }
-
