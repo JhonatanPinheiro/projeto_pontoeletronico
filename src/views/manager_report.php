@@ -45,7 +45,7 @@
                         <?= $current_date = (new DateTime())->format('d-m-Y'); ?>
                     </span>
                 </h4>
-                <h4 class="card-title"> Faltosos de Dia </h4>
+                <h4 class="card-title"> Faltosos do Dia </h4>
                 <p class="card-category mb-0"> Relação dos funcionários que ainda não bateram o ponto hoje </p>
             </div>
             <div class="card-body">
