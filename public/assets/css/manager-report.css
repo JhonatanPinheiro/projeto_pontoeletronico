@@ -1,0 +1,7 @@
+.boder-manager-report {
+    border: 6px ridge var(--white-default);
+}
+
+.border-date{
+    border-bottom: 4px groove var(--grey-default);
+}
