@@ -184,7 +184,7 @@ class WorkingHours extends Model
 
         $result = static::getResultSetFromSelect([
             'raw' => "work_date BETWEEN '{$startDate}' AND '{$endDate}'"
-        ], "SUM(worked_time AS sum");
+        ], "SUM(worked_time) AS sum");
 
         return $result->fetch_assoc()['sum'];
     }

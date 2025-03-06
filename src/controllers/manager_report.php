@@ -2,13 +2,15 @@
 session_start();
 requireValidSession();
 
-loadTemplateView('manager_report', [
-    // 'report' => $report,
-    // 'sumOfWorkedTime' => getTimeStringFromSeconds($sumOfWorkedTime),
-    // 'balance' => "{$sign}$balance",
-    // 'selectedPeriod' => $selectedPeriod,
-    // 'periods' => $periods,
-    // 'selectedUserId' => $selectedUserId,
-    // 'users' => $users,
+$activeUsersCount = User::getActiveUsersCount();
+$absentUsers = WorkingHours::getAbsentUsers();
 
+$yearAndMonth = (new DateTime())->format('Y-m');
+$seconds = WorkingHours::getWorkedTimeInMonth($yearAndMonth);
+$hoursInMonth = explode(':', getTimeStringFromSeconds($seconds))[0];
+
+loadTemplateView('manager_report', [
+    'activeUsersCount' => $activeUsersCount,
+    'absentUsers' => $absentUsers,
+    'hoursInMonth' => $hoursInMonth,
 ]);
