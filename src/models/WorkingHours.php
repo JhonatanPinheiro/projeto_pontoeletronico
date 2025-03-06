@@ -159,12 +159,13 @@ class WorkingHours extends Model
 
         $today = new DateTime();
         $result = Database::getResultFromQuery(
-            "SELECT name FROM users WHERE end_date IS NULL AND id NOT IN (
+            "SELECT `name` FROM users WHERE end_date IS NULL AND id NOT IN (
                                                                             SELECT user_id FROM working_hours
                                                                             WHERE work_date = '{$today->format('Y-m-d')}' 
                                                                             AND time1 IS NOT NULL
             )
-        ");
+        "
+        );
 
         $absentUsers = [];
         if ($result->num_rows > 0) {
@@ -176,7 +177,17 @@ class WorkingHours extends Model
         return $absentUsers;
     }
 
-    
+    public static function getWorkedTimeInMonth($yearAndMonth)
+    {
+        $startDate = (new DateTime("{$yearAndMonth}-1"))->format('Y-m-d');
+        $endDate = getLastDayOfMonth($yearAndMonth)->format('Y-m-d');
+
+        $result = static::getResultSetFromSelect([
+            'raw' => "work_date BETWEEN '{$startDate}' AND '{$endDate}'"
+        ], "SUM(worked_time AS sum");
+
+        return $result->fetch_assoc()['sum'];
+    }
 
     public static function getMonthlyReport($userId, $date)
     {
