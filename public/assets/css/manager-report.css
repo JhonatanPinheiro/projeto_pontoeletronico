@@ -1,7 +1,30 @@
-.boder-manager-report {
-    border: 6px ridge var(--white-default);
+.border-date {
+    border-bottom: 4px groove var(--grey-default);
 }
 
-.border-date{
-    border-bottom: 4px groove var(--grey-default);
+.summary-boxes {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.summary-box {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 10px;
+    color: var(--white-default);
+    margin: 5px 5px;
+    padding-top: 5px;
+    min-width: 200px;
+
+}
+
+.summary-box .icon {
+    font-size: 2.8rem;
+}
+
+.summary-box .title{
+    font-size: 1rem;
 }

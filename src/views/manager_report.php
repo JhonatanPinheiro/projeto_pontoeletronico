@@ -18,26 +18,23 @@
     )
     ?>
 
-    <div class="sumamary-boxes">
-        <div class="summary-box bg-primary boder-manager-report m-1 p-2">
-            <i class="icofont-users text-white"> </i>
+    <div class="summary-boxes">
+        <div class="summary-box bg-primary boder-manager-report">
+            <i class="icon icofont-users text-white"> </i>
             <p class="title">Quantidade de funcionários</p>
             <h3 class="value"><?= $activeUsersCount ?></h3>
         </div>
-    </div>
-    <div class="sumamary-boxes">
-        <div class="summary-box bg-danger boder-manager-report m-1 p-2">
-            <i class="icofont-patient-bed text-white"> </i>
+        <div class="summary-box bg-danger boder-manager-report">
+            <i class="icon icofont-patient-bed text-white"> </i>
             <p class="title">Faltas</p>
             <h3 class="value "><?= count($absentUsers) ?></h3>
         </div>
-    </div>
-    <div class="sumamary-boxes">
-        <div class="summary-box bg-success boder-manager-report  m-1 p-2">
-            <i class="icofont-sand-clock text-white"> </i>
+        <div class="summary-box bg-success boder-manager-report">
+            <i class="icon icofont-sand-clock text-white"> </i>
             <p class="title">Horas no Mês</p>
             <h3 class="value"><?= $hoursInMonth ?></h3>
         </div>
+
     </div>
 
     <?php if (count($absentUsers) > 0): ?>
@@ -49,7 +46,7 @@
                     </span>
                 </h4>
                 <h4 class="card-title"> Faltosos de Dia </h4>
-                <p class="card-category"> Relação dos funcionários que ainda não bateram o ponto hoje </p>
+                <p class="card-category mb-0"> Relação dos funcionários que ainda não bateram o ponto hoje </p>
             </div>
             <div class="card-body">
                 <table class="table table-bordered table-striped table-hover">
