@@ -1,7 +1,7 @@
 <?php
 $errors = [];
 $message = [];
-$exception = [];
+// $exception = [];
 
 if(isset($_SESSION['message'])){
     $message = $_SESSION['message'];
