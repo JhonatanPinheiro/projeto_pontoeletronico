@@ -96,7 +96,7 @@ header.header .dropdown:hover {
 }
 
 header.header .avatar {
-    width: 30%;
+    width: 40px;
     border-radius: 100%;
     margin: 0 0 0 10px;
 }
