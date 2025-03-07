@@ -13,18 +13,20 @@
                     Relatório Mensal
                 </a>
             </li>
-            <li class="nav-item">
-                <a href="manager_report.php">
-                    <i class="icofont-chart-histogram mr-2"></i>
-                    Relatório Mensal Gerencial
-                </a>
-            </li>
-            <li class="nav-item">
-                <a href="users.php">
-                    <i class="icofont-users mr-2"></i>
-                    Usuários
-                </a>
-            </li>
+            <?php if ($user->is_admin): ?>
+                <li class="nav-item">
+                    <a href="manager_report.php">
+                        <i class="icofont-chart-histogram mr-2"></i>
+                        Relatório Mensal Gerencial
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="users.php">
+                        <i class="icofont-users mr-2"></i>
+                        Usuários
+                    </a>
+                </li>
+            <?php endif ?>
         </ul>
     </nav>
     <div class="sidebar-widgets">
@@ -34,8 +36,8 @@
                 <span class="main text-primary"
 
                     <?= $activeClock === 'workedInterval' ? 'active-clock' : '' ?>>
-                    <?= $workedInterval ?> 
-                
+                    <?= $workedInterval ?>
+
                 </span>
                 <span class="label text-muted">Horas Trabalhadas</span>
             </div>
@@ -45,11 +47,11 @@
             <i class="icon icofont-ui-alarm text-danger"></i>
             <div class="info">
                 <span class="main text-danger"
-                   
-                    <?= $activeClock === 'exitTime' ? 'active-clock' : ''?>> 
-                    
+
+                    <?= $activeClock === 'exitTime' ? 'active-clock' : '' ?>>
+
                     <?= $exitTime ?>
-                
+
                 </span>
                 <span class="label text-muted">Horas de Saída</span>
             </div>
