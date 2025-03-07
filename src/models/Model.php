@@ -46,6 +46,11 @@ class Model
         $this->values[$key] = $value;
     }
 
+    public function getValues()
+    {
+        return $this->values;
+    }
+
     public static function getOne($filters = [], $columns = '*')
     {
         #Retorna o nome da classe em que um método estático foi chamado - get_called_class()

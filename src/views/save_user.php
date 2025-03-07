@@ -32,17 +32,18 @@
     ?>
 
     <form action="" method="post">
+        <input type="hidden" name="id" value="<?= $id ?? "" ?>">
         <div class="form-row">
             <div class="form-group col-md-6">
                 <label for="name">Nome</label>
-                <input class="form-control <?= $errors['name'] ? 'is-invalid' : '' ?>" type="text" name="name" id="name" value="" placeholder="Informe o nome">
+                <input class="form-control <?= $errors['name'] ? 'is-invalid' : '' ?>" type="text" name="name" id="name" value="<?= $name ?? "" ?>" placeholder="Informe o nome">
                 <div class="invalid-feedback">
                     <? $errors['name'] ?>
                 </div>
             </div>
             <div class="form-group col-md-6">
                 <label for="email">Email</label>
-                <input class="form-control <?= $errors['email'] ? 'is-invalid' : '' ?>" type="email" name="email" id="email" value="" placeholder="Informe o email">
+                <input class="form-control <?= $errors['email'] ? 'is-invalid' : '' ?>" type="email" name="email" id="email" value="<?= $email ?? "" ?>" placeholder="Informe o email">
                 <div class="invalid-feedback">
                     <? $errors['email'] ?>
                 </div>
@@ -83,7 +84,7 @@
         <div class="form-row">
             <div class="form-group text-center col-md-6">
                 <label for="is_admin">Perfil de Administrador? </label>
-                <input  type="checkbox" id="is_admin" name="is_admin" placeholder=" Permissão de Administrador" class="form-control <?= $errors['is_admin'] ? 'is-invalid' : '' ?>" <?= $is_admin ? 'checked' : '' ?>>
+                <input type="checkbox" id="is_admin" name="is_admin" placeholder=" Permissão de Administrador" class="form-control <?= $errors['is_admin'] ? 'is-invalid' : '' ?>" <?= $is_admin ? 'checked' : '' ?>>
                 <div class="invalid-feedback">
                     <? $errors['is_admin'] ?>
                 </div>
